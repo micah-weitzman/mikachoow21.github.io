@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/cssfamily=Noto+Sans|Lora|Open+Sans);
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #4f535f;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    text-align: center;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    height: 40px;
+    word-spacing: .7em;
+    background-color: #e5eaf1;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: auto;
+    z-index: 200;
+}
+
+
+#title {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+    font-size: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 199;
+        background-color: #7f9aba;
+}
+
+#heading {
+    text-shadow: 1px 1px 1px #5f5b4f;
+}
+
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    letter-spacing: .01em;
+    color: #727789;
+}
+
+#nav a:hover {
+    color: #4f535f;
+    -webkit-transition: all .25s ease-in-out;
+    border-bottom: 2px solid #7fb8ba;
+}
+#last {
+    margin-right: 20px;
+}
+
+h3 {
+    font-size: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
