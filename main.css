@@ -1,11 +1,12 @@
 @import url(http://fonts.googleapis.com/cssfamily=Noto+Sans|Lora|Open+Sans);
+
 body {
     font-family: 'Noto Sans', sans-serif;
     color: #4f535f;
-    height: 100%;
     width: 100%;
     margin-left: auto;
     text-align: center;
+    height: 100%;
 }
 
 #nav {
@@ -27,14 +28,15 @@ body {
 
 
 #title {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 200px;
+    padding-bottom: auto;
     text-align: center;
     font-size: 30px;
     margin-right: auto;
     margin-left: auto;
     z-index: 199;
-        background-color: #7f9aba;
+    background-color: #7f9aba;
+    max-height: 600px;
 }
 
 #heading {
