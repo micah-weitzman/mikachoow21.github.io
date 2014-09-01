@@ -7,6 +7,7 @@ body {
     margin-left: auto;
     text-align: center;
     height: 100%;
+    background-color: #7f9aba;
 }
 
 #nav {
@@ -28,15 +29,14 @@ body {
 
 
 #title {
-    padding-top: 200px;
-    padding-bottom: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
     font-size: 30px;
     margin-right: auto;
     margin-left: auto;
     z-index: 199;
     background-color: #7f9aba;
-    max-height: 600px;
 }
 
 #heading {
@@ -64,13 +64,16 @@ h3 {
     font-size: 60px;
 }
 
+.info {
+	width: 400px;
+	height: 194px;
+	margin: 10px 40px;
+    padding-top: 15px;
+}
 
-
-
-
-
-
-
+.full {
+    background-color: #e6e6e6;
+}
 
 
 
