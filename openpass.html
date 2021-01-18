@@ -120,7 +120,10 @@
     const dateObj = new Date();
     const monthName = dateObj.toLocaleString("default", { month: "long" }).toUpperCase().slice(0,3);
     document.getElementById("curr_date").innerHTML = monthName + " " + dateObj.getDate();
-    document.getElementById("expire_date").innerHTML = monthName + " " + (dateObj.getDate() +1);
+    
+    const tomorrow = new Date(dateObj); 
+    tomorrow.setDate(tomorrow.getDate() + 1)
+    document.getElementById("expire_date").innerHTML = dateObj.toLocaleString("default", { month: "long" }).toUpperCase().slice(0,3) + " " + tomorrow.getDate();
     
     var name = window.prompt("Enter Name: ");
     document.getElementById("name").innerHTML = name;
