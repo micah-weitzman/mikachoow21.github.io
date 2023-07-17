@@ -14,9 +14,8 @@
 
     <link rel="stylesheet" href="css/atom-one-dark-reasonable.css">
     <link rel="stylesheet" href="css/index.css">
-<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
-<!-- and it's easy to individually load additional languages -->
-<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
@@ -29,32 +28,35 @@
 
     void main(int argc, char** argv) {
 
-        char Location[20] = "Philadelpha, PA";
+        char Location[18] = "San Francisco, CA";
 
-        while (current_year >= 2018 && current_year <= 2022) {
+        if (current_year >= 2018 && current_year <= 2022) {
             char Occupation[20] = "Student"; 
+        }
+        else if (current_year >= 2022 ) {
+            char Occupation[9] = "Engineer";
+            char Employer[9] = "Qualcomm";
         }
 
     }
 
     struct education {
-        char University[30] = "University of Pennsylvania";
-        char School[40] = "School of Engineering and Applied Sciences";
-        char Major[20] = "Computer Engineering";
-        char Degree[30] = "Bachelor of Science in Engineering";
+        char* University = "University of Pennsylvania";
+        char* School = "School of Engineering and Applied Sciences";
+        char* Major = "Computer Engineering";
+        char* Degree = "Bachelor of Science in Engineering";
         int Graduation_Year = 2022;
         char** Minors = {"Computer Science", "Mathematics"}
     };
 
 
     struct tools_and_skills {
-        char** programmming = {"C", "Python", "Java", "Assembly", "C++", "OCaml", "MATLAB"};
-        char** hardware = {"VLSI Desgin", "Arduino", "SPICE", "Electric", "MbedOS", "Soldering"};
-        char** software = {"Git", "GNU/Linux", "Solidworks", "MSOffice Suite", "RTOS"};
+        char** programmming = {"C/C++", "Python", "Rust", "TypeScript", "React", "OCaml", "Haskell"};
+        char** tools = {"Git", "GNU/Linux", "Bash", "MSOffice Suite"};
     };
 
     void contact() {
-        <span class="hljs-keyword">link</span> email = <a href="">"wmicah@seas.upenn.edu"</a>;
+        <span class="hljs-keyword">link</span> email = <a href="mailto:weitzman.micah@gmail.com">"weitzman.micah@gmail.com"</a>;
         <span class="hljs-keyword">link</span> linked_in = <a href="https://www.linkedin.com/in/micah-weitzman-176b43201/">"Micah Weitzman"</a>;
         <span class="hljs-keyword">link</span> github = <a href="https://github.com/mikachoow21">"mikachoow21"</a>;
     }
@@ -64,8 +66,8 @@
     <script>
         // first, find all the div.code blocks
         document.querySelectorAll('div.code').forEach(block => {
-        // then highlight each
-        hljs.highlightBlock(block);
+            // then highlight each
+            hljs.highlightBlock(block);
         });
     </script>
 </body>
