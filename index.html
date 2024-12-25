@@ -28,37 +28,41 @@
 
     void main(int argc, char** argv) {
 
-        char Location[18] = "San Francisco, CA";
+        string Location = "San Francisco, CA";
 
-        if (current_year >= 2018 && current_year <= 2022) {
-            char Occupation[20] = "Student"; 
+        if (date >= "09-2018" && date <= "05-2022") {
+            string Occupation = "Student"; 
         }
-        else if (current_year >= 2022 ) {
-            char Occupation[9] = "Engineer";
-            char Employer[9] = "Qualcomm";
+        else if (date >= "09-2022" && date <= "09-2024") {
+            string Occupation = "Software Engineer";
+            string Employer = "Qualcomm";
+        } else if (date >= "10-2024") {
+            string Occupation = "Software Engineer";
+            string Employer = "Google";
         }
 
     }
 
-    struct education {
-        char* University = "University of Pennsylvania";
-        char* School = "School of Engineering and Applied Sciences";
-        char* Major = "Computer Engineering";
-        char* Degree = "Bachelor of Science in Engineering";
+    struct Education {
+        string University = "University of Pennsylvania";
+        string School = "School of Engineering and Applied Sciences";
+        string Major = "Computer Engineering";
+        string Degree = "Bachelor of Science in Engineering";
         int Graduation_Year = 2022;
-        char** Minors = {"Computer Science", "Mathematics"}
+        vector<string> Minors = {"Computer Science", "Mathematics"}; 
     };
 
 
-    struct tools_and_skills {
-        char** programmming = {"C/C++", "Python", "Rust", "TypeScript", "React", "OCaml", "Haskell"};
-        char** tools = {"Git", "GNU/Linux", "Bash", "MSOffice Suite"};
+    struct ToolsAndSkills {
+        vector<string> programmming = {"C/C++", "Python", "Rust",   "TypeScript",
+                                       "React", "OCaml",  "Haskell"};
+        vector<string> tools = {"SQL", "Git", "GNU/Linux", "Bash"};
     };
 
     void contact() {
         <span class="hljs-keyword">link</span> email = <a href="mailto:weitzman.micah@gmail.com">"weitzman.micah@gmail.com"</a>;
-        <span class="hljs-keyword">link</span> linked_in = <a href="https://www.linkedin.com/in/micah-weitzman-176b43201/">"Micah Weitzman"</a>;
-        <span class="hljs-keyword">link</span> github = <a href="https://github.com/mikachoow21">"mikachoow21"</a>;
+        <span class="hljs-keyword">link</span> linked_in = <a href="https://www.linkedin.com/in/micah-weitzman/">"Micah Weitzman"</a>;
+        <span class="hljs-keyword">link</span> github = <a href="https://github.com/micah-weitzman">"micah-weitzman"</a>;
     }
     </div>
 
